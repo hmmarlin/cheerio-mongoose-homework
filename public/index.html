@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LOL Generator</title>
+    <style>
+    body{
+      background-color: #ffffcc;
+    }
+    h1{
+      font-family: 'Shrikhand', cursive;
+      font-size: 50px;
+    }
+    h4{
+       font-family: 'Shrikhand', cursive;
+       font-size: 25px;
+    }
+    #wrapper{
+      width:960px;
+      margin: 0 auto;
+      padding-top: 5%;
+    }
+    #articles{
+      width:60%;
+      height:700px;
+      display:inline-block;
+      overflow: auto;
+    }
+    #notes{
+      width:30%;
+      float:right;
+    }
+    textarea, input{
+      display:block;
+      width:100%;
+      background-color: #FCF5C7;
+    }
+    input{
+      height:36px;
+      font-size: 24px;
+    }
+    textarea{
+      height:200px;
+      font-size: 18px;
+    }
+    button{
+      color:green;
+      background-color: #cce5cc;
+      font-family: 'Shrikhand', cursive;
+      padding:5px;
+      margin-top:5px;
+      font-size:15px;
+
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <h1>L<img src="/laugh.png" width ='50px'>L generator</h1>
+    <h4>Where you can always count on a good laugh!</h4>
+    <div id="articles"></div>
+    <div id="notes"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
