@@ -52,6 +52,7 @@ app.get('/', function(req, res) {
     res.send(index.html);
 });
 
+
 app.get('/scrape', function(req, res) {
     request('http://www.theonion.com/section/local', function(error, response, html) {
         var $ = cheerio.load(html);
@@ -78,7 +79,7 @@ app.get('/scrape', function(req, res) {
 
         });
     });
-    res.redirect('/');
+    res.redirect('back');
 });
 
 app.get('/articles', function(req, res) {
